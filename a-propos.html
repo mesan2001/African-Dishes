@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À Propos - African Dishes</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+<style>
+body{
+   /* background-color: white ; */
+}
+
+.div1 , .div2 , .div2-1 , .div2-2{
+        display: inline-block; /* Affichage en ligne pour les aligner côte à côte */
+        width: 40%; /* Largeur des carrés */
+       /* height: 200px   ; /* Hauteur des carrés */
+       /* margin: 0 10px; /* Marge autour des carrés */
+        text-align: center;  
+}
+
+    .div2{
+    /*  color: white;*/
+    margin-left: 100px;
+
+    }
+p , .div2{
+        text-align: left;
+        
+    }
+    #description {
+        font-size: 22px; /* Vous pouvez ajuster la taille de la police selon vos préférences */
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+       color: rgb(219, 208, 208);
+    }
+    #titre{
+        text-align: center;
+    }
+    #div2-1-1{
+        font-size: 22px;
+        color: white;
+       
+    }
+    #div2-2-1{
+        font-size: 22px;
+        color: black;
+       
+    }
+
+    .div2-1 , .div2-2{
+        border: 2px solid black; /* Bordure de 2 pixels de large, noire */
+        padding: 10px; /* Ajoute un espacement intérieur de 10 pixels */
+        width: fit-content; /* Ajuste la largeur de la div en fonction de son contenu */
+        text-decoration: none;
+        margin-left: 100px;
+    }
+    .div2-1 {
+        background-color: black;
+    }
+    .div2-2 {
+        background-color: white;
+    }
+    .div2-1:hover #div2-1-1 , .div2-2:hover #div2-2-1 {
+        color: red; /* Couleur de texte rouge lorsque survolé */
+    }
+
+    /* texte pour le formulaire */
+    .div3{
+        font-size: 23px;
+    }
+    .input{
+        width: 200px;
+         height: 25px;
+    }
+</style>
+
+<style>
+    #logo2 {
+    width: 200px; /* Largeur de l'image */
+    height: 100px; /* Hauteur de l'image */
+    }
+    #logo2:hover {
+        transform: scale(1.05); /* Légère augmentation de la taille au survol */
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Ombre plus intense au survol */
+    }
+    #div2-1-1 {
+        background-color: black;
+        text-align: center; /* Centre le texte */
+    }
+</style>
+ 
+<div id="div2-1-1">
+    <img id="logo2"  src="image/african-dishes.png">       
+</div >
+  <br><br>
+
+
+    
+    <ul class="haut">
+        <li  class="menu lien"><a style="color: red;" id="special" href="index.html"> <b>Accueil</b></a></li>
+        <li class="menu lien"><a href="a-propos.html"><b>À Propos</b></a></li>
+        <li class="menu lien"><a href="contact.html"><b>Contact</b></a></li>
+        <li  class="menu lien-connexion "><a href="#"><b>Connexion</b></a></li>
+        <li  class="menu logo-connexion">  <a href="#"><img style="width: 30px; height: 30px; " src="image/connexion.png">  </a>  </li>
+
+    </ul>
+
+
+
+    
+<br>
+<br>
+<div class="div1">
+    <img width="700" height="600" src="image/image plat/diapo/diapo2/diapo1.jpg" alt="Icône panier" id="#">
+
+</div>
+<div class="div2">
+    <h1 id="titre">À Propos de African Dishes </h1>
+    <br>
+    <p id="description">
+        Bienvenue chez <strong> African Dishes </strong> ! Situé au cœur d'Angers, notre mini restaurant est une oasis culinaire dédiée à la cuisine africaine authentique. Nous nous spécialisons dans la préparation de plats exquis et de sauces traditionnelles, tous méticuleusement cuisinés pour capturer l'essence même des saveurs africaines.
+
+        Chez African Dishes, la diversité est au cœur de notre cuisine. Des plats venant de toutes les régions d'Afrique vous attendent, offrant une expérience gastronomique riche et variée qui saura éveiller vos papilles et vous transporter vers des contrées lointaines.
+        
+        Situé à Angers, nous sommes fiers de servir non seulement les habitants de cette magnifique ville, mais aussi les environs. Notre passion pour la cuisine africaine se reflète dans chaque plat que nous préparons, et nous sommes impatients de partager cette passion avec vous.
+        
+        Venez nous rendre visite chez African Dishes et laissez-vous emporter par un voyage gustatif unique. Avec chaque bouchée, vous découvrirez la magie et la générosité de la cuisine africaine, et nous sommes sûrs que vous repartirez avec des souvenirs culinaires inoubliables.
+
+          
+    </p>
+        <br><br>  <br><br>  <br><br>      
+    <a class="div2-1" href="index.html">
+        <div id="div2-1-1">
+            Découvrir nos Plats
+        </div >
+    </a>
+   
+    <a class="div2-2" href="index.html">
+        <div id="div2-2-1">
+            Contactez-nous
+        </div >
+    </a>
+
+
+</div>
+<br>
+<br>
+    
+    <div style="text-align: center; width: 80%;">
+        <form method="post" action="email.php">  
+            <div style="display: inline-block; text-align: left;">
+                <fieldset style="width: 80%; margin: 0 auto;"> <!-- Ajustez la largeur selon vos besoins -->
+                    <legend> <h2 style="text-align: center; ">Envoyez-nous un message</h2></legend>
+                    <pre> 
+                        <label class="div3">Nom: <input class="input" type="text" name="nom" /></label>  <br>
+                        <label class="div3">Prénom:<input class="input" type="text" name="prenom"/> </label>  <br>
+                        <label class="div3">Email:<input class="input" type="text" name="email"/></label>  <br>
+                        <label class="div3">Objet:<input class="input" type="text" name="objet"/></label>  <br>
+                        <label class="div3">Message:</label><br/>
+                        <textarea name="message" rows="6" cols="42" style="width: 400px; height: 150px;">Saisissez votre message ici </textarea>  
+                        <input class="div3" type="submit" name="envoyer" value="envoyer"/>    
+                    </pre>  
+                </fieldset>
+            </div>
+        </form>  
+    </div>
+    
+    <br><br>
+
+
+    <nav style="background-color: rgb(5, 0, 0);">   
+
+
+        <footer style="color: aliceblue;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <p>Découvrez les meilleures recettes de cuisine du monde entier sur notre site. Nous sommes passionnés par la cuisine et nous partageons nos connaissances avec vous.</p>
+                    </div>
+                  
+                    <div class="col-md-4">
+                        <h1 style="text-align: center; color: red;">Contactez-nous</h1>
+                        <p style="text-align: center;">Email: contact@votresite.com</p>
+                        <p  style="text-align: center;">Téléphone: +33 7 49 77 72 43 </p>
+                    </div>
+                     <!-- #region    <h1 style="text-align: center; color: red;"> Nos réseaux sociaux</h1>-->
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/votreprofil" target="_blank"><img src="image/facebook.png" width= 12% alt="Facebook"></a>
+                        <a href="https://twitter.com/votreprofil" target="_blank"><img src="image/twitter.png" width= 12% alt="Twitter"></a>
+                        <a href="https://www.instagram.com/votreprofil" target="_blank"><img src="image/instagram.png" width= 12% alt="Instagram"></a>
+                        
+                        <!-- Ajoutez d'autres liens pour d'autres réseaux sociaux -->
+                    </div>
+    <br>
+                </div>
+    
+            </div>
+       
+            <!-- Réseaux sociaux -->
+          
+        </footer>
+    
+    </nav>
+
+
+ <!--  LE SCROLL -->
+
+ <nav id="image-scroll">
+    <ul class="menu-container">
+        <li id="Paula"><img id="logo3" width="200" height="60" src="image/ustenssile.jpg"></li>
+        <li  class="menu-scroll"><a style="color: red;" id="special" href="index.html"> <b>Accueil</b></a></li>
+        <li class="menu-scroll"><a href="a-propos.html"><b>À Propos</b></a></li>
+        <li class="menu-scroll"><a href="contact.html"><b>Contact</b></a></li>
+        <li  class="menu-scroll ">  <a href="#"><img style="width: 30px; height: 30px; " src="image/connexion.png">  </a>  </li>
+    </ul>
+</nav>
+
+
+
+<!-- Votre contenu HTML -->
+
+
+</body>
+</html>
